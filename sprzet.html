@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="icon" type="image/x-icon" href="https://quendin7.pl/ikona.ico">
+    <title>quendin7.pl</title>
+</head>
+<body>
+    <div class="container">
+        <div class="navbarm">
+            <ul>
+                <li class="logo"><a style="font-size: 72px;">quendin7.pl</a><img src="ikona.png"></li>
+                <li><a href="/">Strona Głowna</a></li>
+                <li><a href="sprzet.html">Mój sprzęt</a></li>
+                <li><a href="https://tetris.quendin7.pl">Tetris</a></Ii>
+                <li><div style="background-color: rgba(17, 17, 17, 0.5); height: fit-content; display: table; text-align: center; margin-left: auto; margin-right: auto; border: 1px dashed white;">
+                        <div style="padding: 10px;">
+                        quendin7 <s>2023</s> 2024 wersja 1.5.2 👍
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <article style="margin-left: 5%; background-color: rgba(17, 17, 17, 0.75); height: fit-content; width: max-content; border: 1px dashed white;">
+        <h1>Mój sprzęt</h1>
+        <h2>PC:</h2>
+        <p>CPU: <a style="color: bisque;" href="https://www.morele.net/procesor-intel-core-i5-10400f-2-9-ghz-12-mb-box-bx8070110400f-6731007/">i5 10400F</a></p>
+        <p>Płyta Głowna: <a style="color: bisque;" href="https://www.x-kom.pl/p/656065-plyta-glowna-socket-1200-msi-b560m-pro.html">MSI B560M PRO</a></p>
+        <p>RAM: <a style="color: bisque;" href="https://www.x-kom.pl/p/601993-pamiec-ram-ddr4-corsair-16gb-2x8gb-3600mhz-cl18-vengeance.html">Corsair 16GB (2x8GB) 3600MHz CL18 Vengeance</a></p>
+        <p>DYSK SSD: <a style="color: bisque;" href="https://www.x-kom.pl/p/621625-dysk-ssd-lexar-1tb-m2-pcie-nvme-nm620.html">Lexar 1TB M.2 PCIe NVMe NM620</a></p>
+        <p>DYSK HDD: <a style="color: bisque;" href="https://www.morele.net/dysk-serwerowy-wd-red-plus-2tb-3-5-sata-iii-6-gb-s-wd20efzx-8191771/">WD RED 2TB</a></p>
+        <p>GPU: <a style="color: bisque;" href="https://www.x-kom.pl/p/1053241-karta-graficzna-amd-powercolor-radeon-rx-6700-xt-fighter-12gb-gddr6.html">PowerColor Radeon RX 6700 XT Fighter 12GB</a></p>
+        <p>ZASILACZ: <a style="color: bisque;" href="https://www.morele.net/zasilacz-thermaltake-litepower-rgb-550w-ps-ltp-0550nhsane-1-6010022/">Thermaltake Litepower RGB 550W</a></p>
+        <p>OBUDOWA: <a style="color: bisque;" href="https://www.x-kom.pl/p/1090372-obudowa-do-komputera-endorfy-ventum-200-air.html">ENDORFY Ventum 200 Air</a></p>
+    </article>
+<script>
+var title = document.title;
+var blurMessage = [
+  "gituwa👍", 
+  "ryszard oddaj mi rower ty draniu", 
+  "kocham piwo", 
+  "no i pan paweł"
+];
+
+var intervalTimer = null;
+var timeoutTimer = null;
+
+window.addEventListener("blur", function () { 
+   intervalTimer = setInterval(function() {
+     var rand = Math.floor((Math.random() * blurMessage.length));
+     document.title = blurMessage[rand];
+     timeoutTimer = setTimeout(function() {
+       document.title = title;
+     },1000);
+   },4000);
+});
+
+window.addEventListener("focus", function(){ 
+  clearInterval(intervalTimer);
+  clearTimeout(timeoutTimer);
+  document.title = title; 
+});
+</script>
+</body>
+</html>

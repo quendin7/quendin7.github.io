@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="icon" type="image/x-icon" href="https://quendin7.pl/ikona.ico">
+    <title>quendin7.pl</title>
+</head>
+<body>
+    <div class="container">
+        <div class="navbarm">
+            <ul>
+                <li class="logo"><a style="font-size: 72px;">quendin7.pl</a><img src="ikona.png"></li>
+                <li><a href="/">Strona Głowna</a></li>
+                <li><a href="sprzet.html">Mój sprzęt</a></li>
+                <li><a href="https://tetris.quendin7.pl">Tetris</a></Ii>
+                <li><div style="background-color: rgba(17, 17, 17, 0.5); height: fit-content; display: table; text-align: center; margin-left: auto; margin-right: auto; border: 1px dashed white;">
+                        <div style="padding: 10px;">
+                        quendin7 <s>2023</s> 2024 wersja 1.5.2 👍
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <article style="margin-left: 5%; background-color: rgba(17, 17, 17, 0.75); height: max-content; width: max-content; border: 1px dashed white;">
+        <div style="padding: 10px;">
+        <h1>Witam na potężnej stronie internetowej.</h1> 
+        <p>Zamierzam tutaj dodawać interesujące rzeczy takie jak moje projekty, sprzęt i może nawet porady</p>
+        <h1>Rzeczy którymi się interesuje</h1>
+        <ul>
+            <li>Komputery (sprzęty i systemy)</li>
+            <li>Geografia</li>
+            <li>Projektowanie dróg oraz miast</li>
+            <li>Granie w lige 👍</li>
+        </ul>
+        <h1>Moje doświatczenie</h1>
+        <ul>
+            <li>13 lat w grze Minecraft</li>
+            <li>9 lat w ETS2</li>
+            <li>chyba z 7 lat w lige</li>
+            <li>7 lat w CSGO/CS2</li>
+            <li>5 lat w gry Paradoxu</li>
+            <li>4 lata w HTML (z 2 rocznymi przerwami oczywiśćie bo brak czasu)</li>
+            <li>około 2 lat w Pythonie</li>
+        </ul>
+        <h1>Projekty nad którymi pracuje</h1>
+        <ol>
+            <li><h2>"QueenToolBox"</h2>
+            Program/Skrypt w fazie wczesnego programowania oparty na Pythonie do konfiguracji systemu Windows oraz instalacji programów z jego listy oparty na menedżer pakietów <b>winget</b><br>
+            </li>
+            <li><h2>ISO roboczo nazwane "WindowsQ"</h2>
+            Customowe ISO z Windowsem 10/11 zmodyfikowane razem z usprawnieniami aby odchudzić system z bazju którego Microsoft narobił tymi swoimi aplikacjami,<br>przystosowany do mniej wydajnych PCtów
+            </li>
+        </ol>
+        <h1>Narazie jest tu pusto więc łap mój ulubiony album z 2022</h1>
+        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/5slqQ6UrWEpocD1zLl4wyK?utm_source=generator" width="100%" height="120" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
+    </article>
+<script>
+var title = document.title;
+var blurMessage = [
+  "gituwa👍", 
+  "ryszard oddaj mi rower ty draniu", 
+  "kocham piwo", 
+  "no i pan paweł",
+  "podrawiam legnice",
+  "dzień dobry ja w sprawie biletów na mecz ligi mistrzów",
+  "czy wiedziałeś że masz prawa?"
+];
+
+var intervalTimer = null;
+var timeoutTimer = null;
+
+window.addEventListener("blur", function () { 
+   intervalTimer = setInterval(function() {
+     var rand = Math.floor((Math.random() * blurMessage.length));
+     document.title = blurMessage[rand];
+     timeoutTimer = setTimeout(function() {
+       document.title = title;
+     },2000);
+   },4000);
+});
+
+window.addEventListener("focus", function(){ 
+  clearInterval(intervalTimer);
+  clearTimeout(timeoutTimer);
+  document.title = title; 
+});
+</script>
+</body>
+</html>
